@@ -1,17 +1,26 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 import Header from './components/Header'
+import AlbumList from './components/AlbumList'
 
 export default function App() {
-	return <Header />
+	return (
+		<View style={styles.container}>
+			<Header headerText={'Albums'} />
+			<AlbumList />
+		</View>
+	)
 }
 
 const styles = StyleSheet.create({
-	viewStyle: {
-		backgroundColor: '#f8f8f8'
+	container: {
+		flex: 1
 	},
-	textStyle: {
-		fontSize: 20
+	horizontal: {
+		flexDirection: 'row',
+		justifyContent: 'space-around',
+		padding: 10,
+		justifyContent: 'center'
 	}
 })

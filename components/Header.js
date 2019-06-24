@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
 		shadowOpacity: 0.5
 	},
 	textStyle: {
-		paddingTop: 10,
+		paddingTop: 20,
+		marginTop: 20,
 		fontSize: 20,
 		color: '#333'
 	}
